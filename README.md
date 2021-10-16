@@ -28,7 +28,7 @@ Connecteur JST-PH 2mm (1x3) sur 1 GPIO (que j'utilise pour piloter des leds neop
 
 Inspiration des travaux de Lilygo, Waveshare, GreatScoot.
 
-Motivation et champs des possibles donnés par P. Demerliac et sa chaine Cyrob.  
+Motivation et champs des possibles donnés par P. Demerliac et sa chaine Youtube Cyrob: https://www.youtube.com/channel/UC5QPFDZ3Y4ylkkGJc6Y1OOA  
 
 Initiation à la bricole par P. W. Trainer
 
