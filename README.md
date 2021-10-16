@@ -1,4 +1,4 @@
-# Testboard V2.2
+# Testboard V2.2 ESP32
 
 Carte multi-usage basée sur le module ESP-WROOM-32E.
 
