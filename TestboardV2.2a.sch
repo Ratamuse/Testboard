@@ -911,9 +911,7 @@ Wire Wire Line
 	3950 4000 4750 4000
 Wire Wire Line
 	9450 1550 10200 1550
-Wire Wire Line
-	7350 4000 7350 4350
-Text GLabel 7350 4350 3    50   Output ~ 0
+Text GLabel 7350 4900 3    50   Output ~ 0
 CE
 $Comp
 L Device:D_Schottky D14
@@ -1005,4 +1003,21 @@ F 3 "~" H 1250 4000 50  0001 C CNN
 	1    1250 4000
 	0    1    1    0   
 $EndComp
+Text Notes 6900 3900 0    50   ~ 0
+Optional
+$Comp
+L Jumper:SolderJumper_2_Open JP24
+U 1 1 61782FB8
+P 7350 4600
+F 0 "JP24" V 7304 4668 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 7395 4668 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7350 4600 50  0001 C CNN
+F 3 "~" H 7350 4600 50  0001 C CNN
+	1    7350 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7350 4000 7350 4450
+Wire Wire Line
+	7350 4750 7350 4900
 $EndSCHEMATC
