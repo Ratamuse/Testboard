@@ -4,8 +4,8 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
-Title "TestboardV2.1a"
-Date "2021-04-28"
+Title "TestboardV2.3a"
+Date "2021-12-11"
 Rev ""
 Comp ""
 Comment1 ""
@@ -13,123 +13,12 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	3500 1700 4150 1700
-Wire Wire Line
-	3500 1900 4150 1900
-Wire Wire Line
-	4150 1900 4150 1700
-Wire Wire Line
-	4150 1700 4350 1700
-Connection ~ 4150 1700
-Wire Wire Line
-	2300 1900 2200 1900
-Wire Wire Line
-	2300 1600 1750 1600
-Wire Wire Line
-	2300 1700 1850 1700
-$Comp
-L Device:C C12
-U 1 1 6012DEAB
-P 4350 1850
-F 0 "C12" H 4465 1896 50  0000 L CNN
-F 1 "0.1µF" H 4465 1805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4388 1700 50  0001 C CNN
-F 3 "~" H 4350 1850 50  0001 C CNN
-	1    4350 1850
-	1    0    0    -1  
-$EndComp
-Connection ~ 4350 1700
-Wire Wire Line
-	4350 1700 4650 1700
-$Comp
-L Device:C C13
-U 1 1 6012E4FF
-P 4650 1850
-F 0 "C13" H 4765 1896 50  0000 L CNN
-F 1 "1µF" H 4765 1805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4688 1700 50  0001 C CNN
-F 3 "~" H 4650 1850 50  0001 C CNN
-	1    4650 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 1700 5100 1700
-Connection ~ 4650 1700
-Text GLabel 5100 1700 2    50   Input ~ 0
+Text GLabel 5100 1600 2    50   Input ~ 0
 +3V3
-$Comp
-L power:GND #PWR0135
-U 1 1 6012ED38
-P 4350 2100
-F 0 "#PWR0135" H 4350 1850 50  0001 C CNN
-F 1 "GND" H 4355 1927 50  0000 C CNN
-F 2 "" H 4350 2100 50  0001 C CNN
-F 3 "" H 4350 2100 50  0001 C CNN
-	1    4350 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0136
-U 1 1 6012F2E1
-P 4650 2100
-F 0 "#PWR0136" H 4650 1850 50  0001 C CNN
-F 1 "GND" H 4655 1927 50  0000 C CNN
-F 2 "" H 4650 2100 50  0001 C CNN
-F 3 "" H 4650 2100 50  0001 C CNN
-	1    4650 2100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4350 2000 4350 2100
+	1750 900  1500 900 
 Wire Wire Line
-	4650 2000 4650 2100
-Wire Wire Line
-	3500 1800 3650 1800
-Wire Wire Line
-	3650 1800 3650 2150
-$Comp
-L power:GND #PWR0137
-U 1 1 6012FAA7
-P 3650 2150
-F 0 "#PWR0137" H 3650 1900 50  0001 C CNN
-F 1 "GND" H 3655 1977 50  0000 C CNN
-F 2 "" H 3650 2150 50  0001 C CNN
-F 3 "" H 3650 2150 50  0001 C CNN
-	1    3650 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 1800 2050 1250
-Wire Wire Line
-	2050 1250 4150 1250
-Wire Wire Line
-	4150 1250 4150 1700
-Wire Wire Line
-	2050 1800 2300 1800
-Wire Wire Line
-	3500 1600 3650 1600
-Wire Wire Line
-	3650 1600 3650 1800
-Connection ~ 3650 1800
-Text GLabel 1600 1600 0    50   BiDi ~ 0
-SCL
-Text GLabel 1600 1700 0    50   BiDi ~ 0
-SDA
-Wire Wire Line
-	1750 1600 1750 1000
-Wire Wire Line
-	1750 1000 1500 1000
-Connection ~ 1750 1600
-Wire Wire Line
-	1750 1600 1600 1600
-Wire Wire Line
-	1850 1700 1850 900 
-Wire Wire Line
-	1850 900  1500 900 
-Connection ~ 1850 1700
-Wire Wire Line
-	1850 1700 1600 1700
+	1850 800  1500 800 
 $Comp
 L Device:R R16
 U 1 1 60131EC3
@@ -144,26 +33,26 @@ $EndComp
 $Comp
 L Device:R R17
 U 1 1 60132EF0
-P 1350 1000
-F 0 "R17" V 1143 1000 50  0000 C CNN
-F 1 "2.2K" V 1234 1000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1280 1000 50  0001 C CNN
-F 3 "~" H 1350 1000 50  0001 C CNN
-	1    1350 1000
+P 1350 800
+F 0 "R17" V 1143 800 50  0000 C CNN
+F 1 "2.2K" V 1234 800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1280 800 50  0001 C CNN
+F 3 "~" H 1350 800 50  0001 C CNN
+	1    1350 800 
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1200 1000 1100 1000
+	1200 900  1100 900 
 Wire Wire Line
-	1100 1000 1100 950 
+	1100 900  1100 850 
 Wire Wire Line
-	1100 900  1200 900 
+	1100 800  1200 800 
 Wire Wire Line
-	1100 950  950  950 
-Connection ~ 1100 950 
+	1100 850  950  850 
+Connection ~ 1100 850 
 Wire Wire Line
-	1100 950  1100 900 
-Text GLabel 950  950  0    50   Input ~ 0
+	1100 850  1100 800 
+Text GLabel 950  850  0    50   Input ~ 0
 +3V3
 $Comp
 L Connector_Generic:Conn_01x04 J7
@@ -182,38 +71,6 @@ Text GLabel 8850 5700 0    50   BiDi ~ 0
 SCL
 Text GLabel 8850 5800 0    50   BiDi ~ 0
 SDA
-$Comp
-L power:GND #PWR0138
-U 1 1 601304F7
-P 2200 2050
-F 0 "#PWR0138" H 2200 1800 50  0001 C CNN
-F 1 "GND" H 2205 1877 50  0000 C CNN
-F 2 "" H 2200 2050 50  0001 C CNN
-F 3 "" H 2200 2050 50  0001 C CNN
-	1    2200 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 1900 2200 2050
-$Comp
-L BME680:BME680 IC1
-U 1 1 6012CC92
-P 2300 1600
-F 0 "IC1" H 2900 1865 50  0000 C CNN
-F 1 "BME680" H 2900 1774 50  0000 C CNN
-F 2 "Empreintes:BME680" H 3350 1700 50  0001 L CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001-00.pdf" H 3350 1600 50  0001 L CNN
-F 4 "Air Quality Sensors Environmental Sensor VOC IIR EMC" H 3350 1500 50  0001 L CNN "Description"
-F 5 "" H 3350 1400 50  0001 L CNN "Height"
-F 6 "Bosch Sensortec" H 3350 1300 50  0001 L CNN "Manufacturer_Name"
-F 7 "BME680" H 3350 1200 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "BME680" H 3350 1100 50  0001 L CNN "Arrow Part Number"
-F 9 "https://www.arrow.com/en/products/bme680/bosch" H 3350 1000 50  0001 L CNN "Arrow Price/Stock"
-F 10 "262-BME680" H 3350 900 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Bosch-Sensortec/BME680?qs=v271MhAjFHjo0yA%2FC4OnDQ%3D%3D" H 3350 800 50  0001 L CNN "Mouser Price/Stock"
-	1    2300 1600
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0143
 U 1 1 5F875336
@@ -652,21 +509,19 @@ Wire Wire Line
 	8750 4350 8800 4350
 Wire Wire Line
 	9200 4350 9300 4350
-Text GLabel 9900 2250 3    50   Input ~ 0
+Text GLabel 9750 2150 3    50   Input ~ 0
 VBAT-
 $Comp
 L power:GND #PWR0145
 U 1 1 60B09BD0
-P 10200 2100
-F 0 "#PWR0145" H 10200 1850 50  0001 C CNN
-F 1 "GND" H 10205 1927 50  0000 C CNN
-F 2 "" H 10200 2100 50  0001 C CNN
-F 3 "" H 10200 2100 50  0001 C CNN
-	1    10200 2100
+P 10100 2000
+F 0 "#PWR0145" H 10100 1750 50  0001 C CNN
+F 1 "GND" H 10105 1827 50  0000 C CNN
+F 2 "" H 10100 2000 50  0001 C CNN
+F 3 "" H 10100 2000 50  0001 C CNN
+	1    10100 2000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9900 1650 10350 1650
 $Comp
 L LTC2954CTS8-1#TRMPBF:LTC2954CTS8-1#TRMPBF IC?
 U 1 1 60C46621
@@ -748,7 +603,7 @@ P 4450 4700
 AR Path="/609E7AF1/60C46641" Ref="C?"  Part="1" 
 AR Path="/6011445D/60C46641" Ref="C10"  Part="1" 
 F 0 "C10" H 4565 4746 50  0000 L CNN
-F 1 "TBD" H 4565 4655 50  0000 L CNN
+F 1 "0.150µF" H 4565 4655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4488 4550 50  0001 C CNN
 F 3 "~" H 4450 4700 50  0001 C CNN
 	1    4450 4700
@@ -771,34 +626,27 @@ F 3 "" H 4450 4950 50  0001 C CNN
 $EndComp
 Text GLabel 4750 4000 2    50   Output ~ 0
 CE
-Wire Wire Line
-	3950 3900 4200 3900
-Wire Wire Line
-	4200 3900 4200 3550
-Connection ~ 4200 3900
-Text GLabel 5000 3050 2    50   Input ~ 0
+Text GLabel 5000 3300 2    50   Input ~ 0
 +3V3
 $Comp
 L Device:R R15
 U 1 1 60C46653
-P 4200 3400
+P 4200 3650
 AR Path="/6011445D/60C46653" Ref="R15"  Part="1" 
 AR Path="/609E7AF1/60C46653" Ref="R?"  Part="1" 
-F 0 "R15" H 4270 3446 50  0000 L CNN
-F 1 "10K" H 4270 3355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4130 3400 50  0001 C CNN
-F 3 "~" H 4200 3400 50  0001 C CNN
-	1    4200 3400
+F 0 "R15" H 4270 3696 50  0000 L CNN
+F 1 "10K" H 4270 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4130 3650 50  0001 C CNN
+F 3 "~" H 4200 3650 50  0001 C CNN
+	1    4200 3650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 3250 4200 3050
+	4200 3500 4200 3300
 Text GLabel 4750 3900 2    50   Output ~ 0
 Sensor_VN_IO39
 Wire Wire Line
-	4200 3900 4750 3900
-Wire Wire Line
-	4200 3050 5000 3050
+	4200 3300 5000 3300
 Text GLabel 4750 4200 2    50   Input ~ 0
 PS_HOLD_IO33
 Wire Wire Line
@@ -814,7 +662,7 @@ P 2200 4700
 AR Path="/609E7AF1/60C46662" Ref="C?"  Part="1" 
 AR Path="/6011445D/60C46662" Ref="C8"  Part="1" 
 F 0 "C8" H 2315 4746 50  0000 L CNN
-F 1 "TBD" H 2315 4655 50  0000 L CNN
+F 1 "0.150µF" H 2315 4655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2238 4550 50  0001 C CNN
 F 3 "~" H 2200 4700 50  0001 C CNN
 	1    2200 4700
@@ -894,14 +742,9 @@ $EndComp
 Wire Wire Line
 	1900 3550 1900 3650
 Wire Wire Line
-	2300 3050 2300 3900
-Wire Wire Line
 	1200 3050 1450 3050
 Wire Wire Line
 	1900 3250 1900 3050
-Connection ~ 1900 3050
-Wire Wire Line
-	1900 3050 2300 3050
 Wire Wire Line
 	1450 3250 1450 3050
 Connection ~ 1450 3050
@@ -909,8 +752,6 @@ Wire Wire Line
 	1450 3050 1900 3050
 Wire Wire Line
 	3950 4000 4750 4000
-Wire Wire Line
-	9450 1550 10200 1550
 Text GLabel 7350 4900 3    50   Output ~ 0
 CE
 $Comp
@@ -943,18 +784,11 @@ F 3 "~" H 10550 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9900 1650 9900 2250
+	9750 1550 9750 2150
 Wire Wire Line
-	10350 1900 10200 1900
+	10100 1800 10100 2000
 Wire Wire Line
-	10200 1900 10200 2100
-Wire Wire Line
-	10200 1550 10200 1800
-Wire Wire Line
-	10200 1800 10350 1800
-Connection ~ 10200 1550
-Wire Wire Line
-	10200 1550 10350 1550
+	10200 1900 10350 1900
 Wire Wire Line
 	850  4000 1100 4000
 $Comp
@@ -1020,4 +854,114 @@ Wire Wire Line
 	7350 4000 7350 4450
 Wire Wire Line
 	7350 4750 7350 4900
+Wire Wire Line
+	10100 1800 10350 1800
+Wire Wire Line
+	9650 1650 9650 1550
+Wire Wire Line
+	9650 1550 9450 1550
+Wire Wire Line
+	9650 1650 10200 1650
+Wire Wire Line
+	9750 1550 10350 1550
+Wire Wire Line
+	10200 1900 10200 1650
+Connection ~ 10200 1650
+Wire Wire Line
+	10200 1650 10350 1650
+Text Notes 2400 5300 0    50   ~ 0
+ONT & PDT capacitor calculation:  \nCPDT = 1.56 × 10-4 [μF/ms] • (tPDT – 1ms)\nCONT = 1.56 × 10–4 [μF/ms] • (tONT – 1ms)\n\n0.150µF =962ms +y a fixed internal 64ms delay (t PD,MIN) or 32ms (tDB,ON)
+$Comp
+L SHT41-AD1B-R3:SHT41-AD1B-R3 IC6
+U 1 1 61B6D9F2
+P 2500 1500
+F 0 "IC6" H 3000 1765 50  0000 C CNN
+F 1 "SHT41-AD1B-R3" H 3000 1674 50  0000 C CNN
+F 2 "Empreintes:SHT41AD1BR3" H 3350 1600 50  0001 L CNN
+F 3 "https://www.mouser.fr/datasheet/2/682/Sensirion_Humidity_Sensors_SHT4x_Datasheet-2001050.pdf" H 3350 1500 50  0001 L CNN
+F 4 "Board Mount Humidity Sensors Intermediate Humidity and Temperature Sensor - Bulk" H 3350 1400 50  0001 L CNN "Description"
+F 5 "0.59" H 3350 1300 50  0001 L CNN "Height"
+F 6 "Sensirion" H 3350 1200 50  0001 L CNN "Manufacturer_Name"
+F 7 "SHT41-AD1B-R3" H 3350 1100 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "403-SHT41-AD1B-R3" H 3350 1000 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Sensirion/SHT41-AD1B-R3?qs=XAiT9M5g4x9TCtE5W6N3dA%3D%3D" H 3350 900 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 3350 800 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 3350 700 50  0001 L CNN "Arrow Price/Stock"
+	1    2500 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1500 3750 1850
+$Comp
+L power:GND #PWR0168
+U 1 1 61B8B7FA
+P 3750 1850
+F 0 "#PWR0168" H 3750 1600 50  0001 C CNN
+F 1 "GND" H 3755 1677 50  0000 C CNN
+F 2 "" H 3750 1850 50  0001 C CNN
+F 3 "" H 3750 1850 50  0001 C CNN
+	1    3750 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1500 3750 1500
+$Comp
+L Device:C C20
+U 1 1 61BA045A
+P 4450 1750
+F 0 "C20" H 4565 1796 50  0000 L CNN
+F 1 "0.1µF" H 4565 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4488 1600 50  0001 C CNN
+F 3 "~" H 4450 1750 50  0001 C CNN
+	1    4450 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0169
+U 1 1 61BA088E
+P 4450 2000
+F 0 "#PWR0169" H 4450 1750 50  0001 C CNN
+F 1 "GND" H 4455 1827 50  0000 C CNN
+F 2 "" H 4450 2000 50  0001 C CNN
+F 3 "" H 4450 2000 50  0001 C CNN
+	1    4450 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1900 4450 2000
+Connection ~ 4450 1600
+Wire Wire Line
+	4450 1600 3500 1600
+Wire Wire Line
+	3950 3900 4200 3900
+Wire Wire Line
+	4200 3800 4200 3900
+Connection ~ 4200 3900
+Wire Wire Line
+	4200 3900 4750 3900
+Wire Wire Line
+	4450 1600 5100 1600
+Wire Wire Line
+	1900 3050 2300 3050
+Wire Wire Line
+	2300 3050 2300 3900
+Connection ~ 1900 3050
+Text GLabel 1600 1500 0    50   BiDi ~ 0
+SDA
+Text GLabel 1600 1600 0    50   BiDi ~ 0
+SCL
+Wire Wire Line
+	1750 1500 2500 1500
+Wire Wire Line
+	1750 1500 1600 1500
+Connection ~ 1750 1500
+Wire Wire Line
+	1750 1500 1750 900 
+Wire Wire Line
+	2500 1600 1850 1600
+Wire Wire Line
+	1850 1600 1600 1600
+Connection ~ 1850 1600
+Wire Wire Line
+	1850 1600 1850 800 
 $EndSCHEMATC

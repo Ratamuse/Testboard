@@ -29,4 +29,5 @@
   (lib (name SMMS1360-220M)(type Legacy)(uri ${KIPRJMOD}/Librairie/SMMS1360-220M.lib)(options "")(descr ""))
   (lib (name FS312F-G)(type Legacy)(uri ${KIPRJMOD}/Librairie/FS312F-G.lib)(options "")(descr ""))
   (lib (name XC6220B331MR-G)(type Legacy)(uri ${KIPRJMOD}/Librairie/XC6220B331MR-G.lib)(options "")(descr ""))
+  (lib (name SHT41-AD1B-R3)(type Legacy)(uri ${KIPRJMOD}/Librairie/SHT41-AD1B-R3.lib)(options "")(descr ""))
 )
