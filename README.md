@@ -15,8 +15,7 @@
 
 - Bouton on/off LTC2954 avec interrupt sur µP (On/Off de l'ESP32 et GPIO de l'interrupt utilisable pour des actions): https://www.analog.com/media/en/technical-documentation/data-sheets/2954fb.pdf
 
-- Capteur BOSCH BME680: https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/bme680/
-
+- Capteur température/humidité SHT41: https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Datasheets/Sensirion_Humidity_Sensors_SHT4x_Datasheet.pdf
 - 10 optocoupleurs pour interrupteurs à contacts secs (pour domotiser volets roulants, télécommandes diverses) ou au choix 10 GPIO dispo avec au choix alim 3.3V ou "5V" (Vbat (entre 3.2 et 4.2V) ou Vbus (5V)) pour ajouter des modules.
 
 - Chargeur Li-io/Li-Po MCP73831 via port USB-C
